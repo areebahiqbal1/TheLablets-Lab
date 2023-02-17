@@ -1,5 +1,5 @@
 import {useEffect} from 'react';
-export const RestaurantList = ({loadRestaurants, restaurants}) => {
+export default function RestaurantList({loadRestaurants, restaurants}) {
   useEffect(() => {
     loadRestaurants();
   }, [loadRestaurants]);
@@ -10,4 +10,4 @@ export const RestaurantList = ({loadRestaurants, restaurants}) => {
       ))}
     </ul>
   );
-};
+}
